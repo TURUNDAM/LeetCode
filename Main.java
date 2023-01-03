@@ -1,12 +1,22 @@
 import Solutions.Easy.TwoSum;
-
-import java.util.Arrays;
+import Solutions.Medium.AddTwoNumbers;
+import Solutions.Medium.ListNode;
 
 public class Main {
     public static void main(String[] args) {
         TwoSum twoSum = new TwoSum();
-        int[] nums = {3,3};
-        int target = 6;
-        System.out.println(Arrays.toString(twoSum.twoSum(nums, target)));
+        ListNode l1 = new ListNode(9);
+        ListNode l2 = new ListNode(9);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(9,l2);
+        l2 = new ListNode(1,l2);
+        AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+        System.out.println(addTwoNumbers.addTwoNumbers(l1,l2));
     }
 }
